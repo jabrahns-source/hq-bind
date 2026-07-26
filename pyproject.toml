@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hq-bind"
+version = "0.1.0"
+description = "Hybrid Quantum Binding Protocol — deterministic commitments for Kerna-Ledger"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Jacarri Sanders", email = "eventheoddsfoundry@gmail.com"}]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
